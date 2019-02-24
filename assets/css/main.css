@@ -1042,6 +1042,8 @@ hr {
   display: inline-block;
   width: inherit;
   padding: 7px;
+  height: 200px;
+  width: 200px;
 }
 
 .testimonial-item .content {
