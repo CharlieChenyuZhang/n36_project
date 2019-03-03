@@ -1,6 +1,7 @@
 'user strict'
+const img = document.querySelector('#insta1')
+// const img = document.getElementById('insta1_test')
 
-var img = document.getElementById('insta1_test')
-img.onclick = function(){
-    console.log('haha')
-}
+img.addEventListener('click', function(e) {
+    console.log('haa')
+})

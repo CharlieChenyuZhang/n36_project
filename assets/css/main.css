@@ -4,7 +4,8 @@ html {
 }
 
 .instagramGallery {
-  float:left;
+  /* float:left; */
+  height: 615px;
 }
 
 .grids {
@@ -98,6 +99,7 @@ h1, h2, h3, h4 {
   color: #222222;
   font-weight: 700;
   font-family: 'Arvo', serif;
+  margin-top: 35px;
 }
 
 a {
@@ -160,6 +162,14 @@ a:not([href]):not([tabindex]) {
   position: relative;
   width: 60px;
   background-color: #F63854;
+}
+
+.shapeWhite {
+  height: 1px;
+  margin: 0 auto 30px;
+  position: relative;
+  width: 60px;
+  background-color: white;
 }
 
 .padding-none {
