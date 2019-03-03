@@ -22,6 +22,11 @@ html {
   display: table;
 }
 
+.row .column img {
+  height: 23%;
+  width: auto;
+}
+
 body {
   background: #fff;
   font-size: 14px;
