@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Arvo:700|Open+Sans");
+.galerySection {
+  /* position: absolute;
+  height: 1295px; */
+  position: relative;
+  top: 20px;
+}
 html {
   overflow-x: hidden;
 }
@@ -730,7 +736,7 @@ hr {
 }
 
 .navbar li.active a.nav-link {
-  color: #preset;
+  color: white;
 }
 
 .dropdown-toggle::after {
@@ -867,7 +873,17 @@ hr {
   background: #34363a;
 }
 
+#team {
+  position: relative;
+}
+#contact {
+  position: relative;
+}
 /* Team Item */
+.instagramGallery .grids .grid-9 img:hover {
+  box-shadow: 0 10px 22px 10px rgba(27, 38, 49, 0.1);
+}
+
 .team-item:hover {
   box-shadow: 0 10px 22px 10px rgba(27, 38, 49, 0.1);
 }
@@ -1401,7 +1417,7 @@ textarea {
 
 /*cta
 */
-#cta{background: ;}
+/* #cta{background: ;} */
 
 /* Footer Area Start */
 .footer-area {

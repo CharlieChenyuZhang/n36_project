@@ -103,9 +103,11 @@
               </div>
             </div>
             <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
-              <div class="intro-img">
-                <img class="img-fluid" src="assets/img/intro-mobile.png" alt="">
-              </div>            
+              <div class="intro-img" style="max-width:500px">
+                <img class="mySlides" src="./assets/img/slideshow/1.jpg" style="width:100%">
+                <img class="mySlides" src="./assets/img/slideshow/2.jpg" style="width:100%">
+                <img class="mySlides" src="./assets/img/slideshow/3.jpg" style="width:100%">
+              </div>
             </div>
           </div> 
         </div> 
@@ -115,41 +117,27 @@
     </header>
 
     <!-- instagram galary -->
-    
-    <!-- <div class="section-header text-center" style="margin-top: 35px">          
-        <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Meet our instagram influcers</h2>
-    </div>
-    <div class="shape wow fadeInDown" data-wow-delay="0.3s"></div> -->
-    <div class="section-header text-center">          
+    <div class="galerySection">
+      <div class="section-header text-center">          
         <h2 class="section-title wow fadeInDown" data-wow-delay="0.2s">Meet our instagram influcers</h2>
         <div class="shape wow fadeInDown" data-wow-delay="0.3s"></div>
-    </div>
-    <div class="instagramGallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
-      <div class='grids' style="float: left; margin-top: 1px">
-        <ul class="grid-9">
-          <img id="insta1" src="assets/img/instagram/1.jpg">
-          <img id="insta2" src="assets/img/instagram/2.jpg">
-          <img id="insta3" src="assets/img/instagram/3.jpg">
-          <img id="insta4" src="assets/img/instagram/4.jpg">
-          <img id="insta5" src="assets/img/instagram/5.jpg">
-          <img id="insta6" src="assets/img/instagram/6.jpg">
-          <img id="insta7" src="assets/img/instagram/1.jpg">
-          <img id="insta8" src="assets/img/instagram/2.jpg">
-          <img id="insta9" src="assets/img/instagram/3.jpg">
-        </ul>
       </div>
-      <div class='grids'>
-          <ul class="grid-9">
-            <img id="insta1" src="assets/img/instagram/1.jpg">
-            <img id="insta2" src="assets/img/instagram/2.jpg">
-            <img id="insta3" src="assets/img/instagram/3.jpg">
-            <img id="insta4" src="assets/img/instagram/4.jpg">
-            <img id="insta5" src="assets/img/instagram/5.jpg">
-            <img id="insta6" src="assets/img/instagram/6.jpg">
-            <img id="insta7" src="assets/img/instagram/1.jpg">
-            <img id="insta8" src="assets/img/instagram/2.jpg">
-            <img id="insta9" src="assets/img/instagram/3.jpg">
-          </ul>
+      <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
+        <div class="instagramGallery">
+          <div class='grids' style="float: left; margin-top: 1px">
+              <ul class="grid-9">
+                <img id="insta1" src="assets/img/instagram/1.jpg">
+                <img id="insta2" src="assets/img/instagram/2.jpg">
+                <img id="insta3" src="assets/img/instagram/3.jpg">
+                <img id="insta4" src="assets/img/instagram/4.jpg">
+                <img id="insta5" src="assets/img/instagram/5.jpg">
+                <img id="insta6" src="assets/img/instagram/6.jpg">
+                <img id="insta7" src="assets/img/instagram/1.jpg">
+                <img id="insta8" src="assets/img/instagram/2.jpg">
+                <img id="insta9" src="assets/img/instagram/3.jpg">
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -473,6 +461,23 @@
             backDelay: 1000
           });
         });
+      </script>
+
+    <script>
+      var myIndex = 0;
+      carousel();
+      
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
       </script>
   </body>
 </html>
