@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Arvo:700|Open+Sans");
+.singlePostView {
+  margin-left: 50%;
+  width: 440px;
+  height: 560px;
+  overflow: scroll;
+  margin-bottom: 34px;
+}
+
 .galerySection {
   /* position: absolute;
   height: 1295px; */
